@@ -1,13 +1,13 @@
 body {
     font-size:20px;
     font-family:'Times New Roman';
-    border: 1px solid black;
     margin-top: 100px;
     margin-bottom: 100px;
     margin-left: 300px;
     margin-right: 300px;
     line-height: 1.5;
-
+    border: 1px solid black;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 h1 {
     font-size: 70px;
@@ -33,6 +33,15 @@ p{
 }
 .logo{
     max-width: 150px;
+}
+.dark {
+    background-color: #333;
+    color: white;
+    border-color: white;
+}
+.dark h2 {
+    border-bottom-color: white;
+    color: #4F9ACF;
 }
 footer{
     margin: auto;

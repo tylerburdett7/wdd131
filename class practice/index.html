@@ -1,0 +1,45 @@
+<tagName attribute="value">
+
+
+</tagName>
+
+<html>
+    <head>
+        <style>
+             .btn.green {
+                background-color: green;
+            }
+            .btn {
+                background-color: red;
+            }
+        </style>
+        <script>
+            var var1 = "var1"
+            let let1 = "let1"
+            const const1 = 'const1'
+
+            function printName() {
+                const el = document.getElementById('root')
+                el.innerHTML = 'hello'
+            }
+
+            printName(var1)
+
+
+        </script>
+    </head>
+    <body>
+        <div id="root">
+
+        </div>
+        <div id="root" class="container container2">
+
+        </div>
+
+        <button class="btn">Test</button>
+        <button class="btn">Test</button>
+        <button class="btn">Test</button>
+        <button class="btn">Test</button>
+        <button class="btn green">Get Started</button>
+    </body>
+</html>
