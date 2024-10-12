@@ -14,6 +14,34 @@ html body{
     padding: 0;
     width: 100%;
 }
+
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+}
+.viewer img {
+    width: 70%;
+    height: auto;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1100; /* Ensures it's above the image */
+}
 header {
     background-color: var(--primary-color);
     padding-top: 10px;
@@ -92,6 +120,9 @@ img {
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .close-viewer {
+        display: block; /* Make sure the button is always displayed */
     }
 }
 
