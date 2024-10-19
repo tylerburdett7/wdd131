@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+
+    }
+</style>
+<body>
+
+    <ul>
+        <li>Menu</li>
+        <li>Menu</li>
+        <li>Menu</li>
+        <li>Menu</li>
+        <li>Menu</li>
+
+    </ul>
+    <script>
+
+        // variables
+        const a = 1;  //can only be set once
+        let b = 2;
+        var c = 3; //probably don't ever need to use it.
+
+
+        // putting a function in an object allows me to have similar functions in different contexts. For example you could have one that's in an object and another function named the same exact thing outside of the object that does something similar but not the same. 
+        const obj = {
+            a: 1,
+            b: 2,
+            c: 3,
+            D: 4, 
+            
+            getName: () => {
+                return "Brother Willden"
+            }
+        }
+
+        console.log(obj.a)
+        console.log(obj.getName())
+
+        function sum(a, b) {
+            return a + b
+        }
+
+        const sum2 = (a, b) => a + b
+
+        const sum3 = function(a, b) {
+            return a + b
+        }
+
+
+        const d = document
+        d.getElementById()
+
+        d.querySelector('ul')
+
+
+        const listItems = d.querySelectorAll('li')
+        
+        console.log(listItems)
+        
+        let counter = 0
+
+        while (counter < 10) {
+            console.log(hello)
+            count++
+            count += 1
+            counter = counter + 1            
+        }
+
+        for (let i = 0; i < 10; i++) {
+            console.log("I am in a for loop " + i)
+        }
+
+
+    </script>
+</body>
+</html>
