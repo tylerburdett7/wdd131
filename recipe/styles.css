@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+h1 {
+    font-family: 'Amatic+sc'
+}
+img {
+	max-width: 2%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    font-family: 'Amatic+SC'
+}
+
+header img {
+    max-width: 5%;
+    align-self: center;
+}
+
+#recipe-search {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: 5px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid gray;
+    
+}
+
+.search-button {
+    width: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.recipe-container {
+    margin-top: 50px;
+    border: 3px solid black;
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.recipe-container img {
+    max-width: 50%;
+}
+.recipe-tag {
+    border: 2px solid black;
+    max-width: 80px;
+    max-height: 30px;
+    text-align: center;
+}
+
+footer {
+    padding-top: 50px;
+    text-align: center;
+}
+
