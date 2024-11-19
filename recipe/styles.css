@@ -97,7 +97,8 @@ header img {
 }
 
 .recipe-container img {
-    max-width: 50%;
+    max-width: 600px;
+    width: 100%;
 }
 .recipe-tag {
     width: 100px;
@@ -118,12 +119,40 @@ footer a {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 890px) {
     .recipe-container {
-        margin-top: 50px;
-        border: 3px solid black;
-        border-radius: 10px;
-        padding: 10px;
-        justify-content: center;        
+        flex-direction: column;
+        align-items: flex-start; /* Aligns all content to the left */
+        text-align: left; /* Aligns text to the left */
+        padding: 10px; /* Adds some padding for spacing */
+    }
+
+    .recipe-container img {
+        width: 100%; /* Allows the image to take the full container width */
+        max-width: 700px; /* Prevents the image from becoming too large */
+        height: auto; /* Maintains aspect ratio */
+        margin-bottom: 20px; /* Adds spacing below the image */
+        align-self: center;
+    }
+
+    .recipe-description-container {
+        width: 100%; /* Ensures the description spans the container */
+        padding-left: 10px; /* Adds left padding for alignment */
+    }
+    
+    .recipe-tag {
+        width: 50px; /* Allow the width to adjust dynamically */
+        padding: 5px 10px; /* Add some padding for spacing */
+        font-size: 5pt; /* Adjust font size for smaller screens */
+    }
+
+
+    header img {
+        width: clamp(50px, 20vw, 100px); /* Dynamically adjusts size based on viewport width */
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    header h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem); /* Dynamically adjusts the font size */
     }
 }
