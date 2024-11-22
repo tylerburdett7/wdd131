@@ -60,6 +60,10 @@ function renderRecipes(recipeList) {
     const recipesHTML = recipeList.map(recipeTemplate).join('')
 	// Set the HTML strings as the innerHTML of our output element.
     container.innerHTML = recipesHTML
+    if (recipeList.length === 0) {
+        container.innerHTML = '<p>No recipes found. Please try a different search!</p>';
+        return;
+    }
 }
 
 document.querySelector('#recipe-search').addEventListener('submit', searchHandler)
@@ -89,3 +93,5 @@ function init() {
 }
 
 init()
+
+
