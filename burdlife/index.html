@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurdLife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/burdlifelogoblack.png" alt="Burdlife Logo" id="logo-image">
+        </a>        
+        <nav>
+            <a target="_blank" href="https://www.etsy.com/shop/BurdLifeDesign">Etsy shop</a>
+            <a href="products.html">Products</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/IMG_4418.webp" alt="Lake Powell" id="hero-image" loading="lazy">
+            <div class="browse-products">
+                <p>Browse our products</p>
+                <button onclick="window.location.href='products.html';" class="browse-button">
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+        </div>
+        <h1 id="categories-title">Categories</h1>
+        <div class="categories-section">
+            <!-- Wrap each category in an anchor tag with query parameter -->
+            <a href="products.html?category=shirts">
+                <h2 id="tees">Tees</h2>
+            </a>
+            <a href="products.html?category=hoodies">
+                <h2 id="hoodies">Hoodies</h2>
+            </a>
+            <a href="products.html?category=accessories">
+                <h2 id="accessories">Accessories</h2>
+            </a>
+            <a href="products.html?category=shirts">
+                <img src="images/happy-stick-man-tee.jpg" alt="Lake Powell T-shirt" id="teeimg">
+            </a>
+            <a href="products.html?category=hoodies">
+                <img src="images/lakepowell-hoodie.jpg" alt="Lake Powell Hoodie" id="hoodieimg">
+            </a>
+            <a href="products.html?category=accessories">
+                <img src="images/wave-mug.jpg" alt="Lake Powell Mug" id="accessoryimg">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Burdlife 2024</p>
+    </footer>
+</body>
+</html>
